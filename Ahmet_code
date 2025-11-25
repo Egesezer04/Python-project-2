@@ -1,11 +1,13 @@
 import requests
 import sqlite3
 from bs4 import BeatifulSoup
+
+
 class listing:
     def _init_(self,title,price,description,images):
-    self.title = title
-    self.price = price
-    self.description = description
-    self.images = images
+        self.title = title
+        self.price = price
+        self.description = description
+        self.images = images
     def summary(self):
         return f"Title{self.title},Price{self.price},images:{len(self.image)}"
