@@ -1,83 +1,135 @@
-📘 Listing Quality Scoring System
-A Quality Analyzer for Real Estate / Vehicle / Book Listings using Web Scraping, Selenium, SQLite, OOP, and GUI
-This project is a Python-based application designed to scrape listing data from the web and evaluate the quality of each listing. It uses modern software principles such as object-oriented programming, abstraction, scoring logic, web scraping (Selenium + BeautifulSoup), SQLite database management, and a Tkinter graphical interface.
+# Listing Quality Scoring System
 
-🚀 Features ✅ Web Scraping
-• Dynamic page loading using Selenium
-• HTML parsing with BeautifulSoup
-•Automatically extracts the first 10 product listings
-•Uses threading to keep the GUI responsive
+A modern Python application that scrapes listing data (real estate, vehicles, books, etc.), analyzes listing quality, stores results in SQLite, and presents them in a clean Tkinter GUI.
 
-✅ Object-Oriented Business Logic
-•BaseModel — shared base class
-•Listing — structured listing model
-•AbstractScorer — scoring interface using abstraction
-•QualityScorer — full scoring algorithm
-•Modular, clean, and extensible architecture
-•Quality evaluation based on:
-•Title
-•Price
-•Description
-•Image count
+---
 
-✅ SQLite Database
-•Automatic table creation
-•Stores Title, Price, Description, Images, Score, Missing Fields
-•Safe dictionary-based SQL insert
+## 🚀 Features
 
-✅ Tkinter GUI
-•URL input field
-• “Lets Go” scrape button
-•Table (TreeView) to display listings
-•Log message section
-•Threading support to prevent freezing
+### ✅ Web Scraping
 
-🏗️ Project Architecture Overview
-• BaseModel
-Shared ID structure
-• Listing
-Listing data model
-• AbstractScorer
-Abstract scoring interface
-• QualityScorer
-Listing quality scoring logic
-• Database
-SQLite management
-• App (Tkinter)
-Graphical user interface
+* Dynamic page loading using **Selenium**
+* HTML parsing with **BeautifulSoup**
+* Automatically extracts the **first 10 product listings**
+* Uses **threading** to keep the GUI responsive
+
+### ✅ Object‑Oriented Business Logic
+
+* `BaseModel` — shared base structure
+* `Listing` — unified listing model
+* `AbstractScorer` — scoring interface
+* `QualityScorer` — full scoring algorithm
+* Clean, modular, extensible architecture
+* Quality factors include:
+
+  * Title
+  * Price
+  * Description
+  * Image Count
+
+### ✅ SQLite Database
+
+* Automatic table creation
+* Saves: title, price, description, images, score, missing fields
+* Safe SQL insert using dictionary binding
+
+### ✅ Tkinter GUI
+
+* URL input field
+* **“Let’s Go”** scrape button
+* Interactive table (TreeView)
+* Log output window
+* Background threading support
+
+---
+
+## 🏗️ Project Architecture Overview
+
+```
+/ project
+│── app.py               # Main Tkinter App
+│── scraper.py           # Selenium + BS4 logic
+│── models.py            # BaseModel & Listing
+│── scorer.py            # AbstractScorer & QualityScorer
+│── database.py          # SQLite handler
+│── README.md            # This file
+```
+
+### Main Components
+
+* **BaseModel** → Unique ID structure
+* **Listing** → Listing object
+* **AbstractScorer** → Enforced scoring interface
+* **QualityScorer** → Quality scoring rules
+* **Database** → SQLite operations
+* **App** → Tkinter GUI
+
+---
+
+## 📊 Quality Scoring Logic
+
+| Criterion   | Points | Notes                |
+| ----------- | ------ | -------------------- |
+| Title       | 0–10   | 0 if missing         |
+| Price       | 0–20   | Low-price warning    |
+| Description | 0–20   | Based on text length |
+| Images      | 0–20   | 0, 1–2, or 3+ images |
+
+Score = sum of all criteria.
+
+---
+
+## 🛠️ Installation
+
+### 1️⃣ Install dependencies
+
+```bash
+pip install selenium bs4 webdriver-manager
+```
+
+### 2️⃣ Run the project
+
+```bash
+python app.py
+```
+
+### 3️⃣ GUI will open
+
+type a URL → click **“Let’s Go”**
+
+---
+
+## 🌐 Scraping Workflow
+
+1. ChromeDriver installs automatically via `webdriver-manager`
+2. Selenium loads webpage
+3. BeautifulSoup parses the HTML
+4. First 10 products are extracted
+5. A `Listing` object is generated
+6. Each listing is scored
+7. Data is saved to SQLite + displayed in GUI
+
+---
+
+## 🖥️ How to Use the GUI
+
+* Enter any product/listing URL (default: *books.toscrape.com*)
+* Press **Let’s Go**
+* Scraper fetches & evaluates first 10 items
+* Quality score + missing fields appear instantly
+
+---
+
+## 📦 Technologies Used
+
+* **Python 3.10+**
+* **Selenium WebDriver**
+* **BeautifulSoup (bs4)**
+* **SQLite3**
+* **Tkinter GUI**
+* **Object-Oriented Architecture**
+* **Threading**
 
 
-📊 Quality Scoring Logic
-Criterion	Points	Explanation
-Title	10	0 if missing
-Price	20	Warning if unusually low
-Description	0–20	Based on length
-Images	0–20	0, 1–2, or 3+ images
 
-🛠️ Installation
-1️⃣ Install required package
-•pip install selenium bs4 webdriver-manager
-
-
-2️⃣ Run the project
-•python app.py
-
-3️⃣ GUI opens
-•click Lets Go
-
-
-🌐 Scraping Workflow
-•ChromeDriver installs automatically via webdriver-manager
-•Selenium loads the webpage
-•BeautifulSoup parses HTML
-•First 10 products are extracted
-•A Listing object is created for each
-
-🖥️ How to Use the GUI
-•Enter any URL (default: books.toscrape.com)
-•Click Lets Go
-•App scrapes the first 10 items
-•Each listing is scored for quality
-•Results are saved to SQLite
-•Results appear instantly in the table
 
