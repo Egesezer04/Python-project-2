@@ -130,6 +130,12 @@ type a URL → click **“Let’s Go”**
 * **Object-Oriented Architecture**
 * **Threading**
 
+## İMPORTANT(before running the code please install these extensions)
+
+* **SQL Server(mssql)
+* **SQLite Viewer
+
+
 
 
 
