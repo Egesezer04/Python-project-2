@@ -78,6 +78,14 @@ A modern Python application that scrapes listing data (real estate, vehicles, bo
 Score = sum of all criteria.
 
 ---
+##  Gereksinimler
+
+ * **Python 3.10/Python 3.11
+ * **Tkinter (Python ile birlikte gelir)  
+ * **Selenium  
+ * **BeautifulSoup4  
+ * **Webdriver Manager  
+ 
 
 ## 🛠️ Installation
 
@@ -129,12 +137,6 @@ type a URL → click **“Let’s Go”**
 * **Tkinter GUI**
 * **Object-Oriented Architecture**
 * **Threading**
-
-## İMPORTANT(before running the code please install these extensions)
-
-* **SQL Server(mssql)
-* **SQLite Viewer
-
 
 
 
