@@ -79,12 +79,12 @@ Score = sum of all criteria.
 
 ---
 ## Requirements
-
  * **Python 3.10/Python 3.11
  * **Tkinter (Python ile birlikte gelir)  
  * **Selenium  
  * **BeautifulSoup4  
  * **Webdriver Manager
+ * **Tested on Windows 11, and Google Chrome (latest version) using ChromeDriver via Webdriver Manager
 
 
 ## 🛠️ Installation
@@ -106,21 +106,6 @@ python app.py
 type a URL → click **“Let’s Go”**
 
 ---
-* **Tested on Windows 11, and Google Chrome (latest version) using ChromeDriver via Webdriver Manager
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## 🌐 Scraping Workflow
 
