@@ -85,7 +85,7 @@ Score = sum of all criteria.
  * **Selenium  
  * **BeautifulSoup4  
  * **Webdriver Manager
- 
+
 
 ## 🛠️ Installation
 
@@ -106,6 +106,21 @@ python app.py
 type a URL → click **“Let’s Go”**
 
 ---
+* **Tested on Windows 11, and Google Chrome (latest version) using ChromeDriver via Webdriver Manager
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 🌐 Scraping Workflow
 
