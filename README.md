@@ -84,7 +84,7 @@ Score = sum of all criteria.
  * **Selenium  
  * **BeautifulSoup4  
  * **Webdriver Manager
- * **Tested on Windows 11, and Google Chrome (latest version) using ChromeDriver via Webdriver Manager
+ 
 
 
 ## 🛠️ Installation
@@ -129,6 +129,8 @@ type a URL → click **“Let’s Go”**
 ---
 
 ## 📦 Technologies Used
+
+* **Tested on Windows 11, and Google Chrome (latest version) using ChromeDriver via Webdriver Manager
 
 * **Python 3.10+**
 * **Selenium WebDriver**
