@@ -1,0 +1,7 @@
+Requirements
+**Tested on Windows 11, and Google Chrome (latest version) using ChromeDriver via Webdriver Manager
+**Python 3.10/Python 3.11
+**Tkinter (Python ile birlikte gelir)
+**Selenium
+**BeautifulSoup4
+**Webdriver Manager
