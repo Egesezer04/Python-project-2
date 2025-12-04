@@ -130,8 +130,8 @@ type a URL → click **“Let’s Go”**
 
 ## 📦 Technologies Used
 
+[Watch my video](https://github.com/Egesezer04/Python-project-2/raw/main/videos/video1.mp4)
 * **Tested on Windows 11, and Google Chrome (latest version) using ChromeDriver via Webdriver Manager
-
 * **Python 3.10+**
 * **Selenium WebDriver**
 * **BeautifulSoup (bs4)**
